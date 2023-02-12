@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Profile</title>
+  </head>
+  <body>
+    <h1>My Team</h1>
+    {{#each employees}}
+      <h2>{{name}}</h2>
+      <p>ID: {{id}}</p>
+      <p>Email: {{email}}</p>
+      {{#if role}}
+        <p>Role: {{role}}</p>
+      {{/if}}
+      {{#if officeNumber}}
+        <p>Office Number: {{officeNumber}}</p>
+      {{/if}}
+      {{#if github}}
+        <p>GitHub: {{github}}</p>
+      {{/if}}
+      {{#if school}}
+        <p>School: {{school}}</p>
+      {{/if}}
+    {{/each}}
+  </body>
+</html>
